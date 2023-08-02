@@ -14,6 +14,7 @@ namespace Shape
             printShapeArea(r);
             printShapeArea(c);
         }
+
         public static void printShapeArea(Shape s)
         {
 
@@ -24,9 +25,12 @@ namespace Shape
 
     }
 
+
+
+
     public class Shape
     {
-        public string Name { get; set; }
+        public string Name;
 
         public virtual double CalculateArea()
         {
@@ -36,9 +40,9 @@ namespace Shape
 
     public class Rectangle : Shape
     {
-        public double width;
-        public double height;
-        public Rectangle(double width, double height)
+        private double width;
+        private double height;
+        private Rectangle(double width, double height)
         {
             this.Name = "Rectangle";
             this.width = width;
@@ -55,10 +59,10 @@ namespace Shape
 
     public class Traingle : Shape
     {
-        public double Base;
-        public double height;
+        private doubl Base;
+        private double height;
 
-        public Traingle(double Base, double height)
+        private Traingle(double Base, double height)
         {
             this.Name = "Traingle";
             this.Base = Base;
@@ -74,7 +78,7 @@ namespace Shape
 
     public class Circle : Shape
     {
-        public double radius;
+        private double radius;
         public Circle(double radius)
         {
             this.Name = "circle";
