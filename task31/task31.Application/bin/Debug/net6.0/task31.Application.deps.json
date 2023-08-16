@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "task31.Application/1.0.0": {
+        "dependencies": {
+          "task31.Domain": "1.0.0"
+        },
+        "runtime": {
+          "task31.Application.dll": {}
+        }
+      },
+      "task31.Domain/1.0.0": {
+        "runtime": {
+          "task31.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "task31.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "task31.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
